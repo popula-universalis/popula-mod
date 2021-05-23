@@ -1,0 +1,29 @@
+modLoader = "javafml" #mandatory
+loaderVersion = "[34,)" #mandatory (28 is current forge version)
+issueTrackerURL = "https://github.com/popula-universalis/popula-mod/issues" #optional
+license = "GPLv3"
+# A list of mods - how many allowed here is determined by the individual mod loader
+
+[[mods]] #mandatory
+# The modid of the mod
+modId = "popula" #mandatory
+version = "${version}"
+displayName = "Popula Universalis" #mandatory
+#logoFile="examplemod.png" #optional
+credits=""
+authors = "Exclame, Rheembow" #optional
+description = '''Popula.'''
+
+[[dependencies.popula]] #optional
+modId = "minecraft" #mandatory
+mandatory = true #mandatory
+versionRange = "[1.16.5,)" #mandatory
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.popula]] #optional
+modId = "forge" #mandatory
+mandatory = true #mandatory
+versionRange = "[36,)" #mandatory
+ordering = "NONE"
+side = "BOTH"
